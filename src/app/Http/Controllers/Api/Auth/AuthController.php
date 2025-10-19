@@ -29,8 +29,7 @@ class AuthController extends Controller
         'user' => $user,
         'token' => $user->createToken($request->email)->plainTextToken]);
     }
-    public function logout(){
-        
+    public function logout(Request $request){
         $user = auth()->user();
         $user->tokens()->delete();
 

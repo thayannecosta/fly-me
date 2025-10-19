@@ -56,8 +56,8 @@ class TravelRequestController extends Controller
     public function update(TravelRequestValidation $request, string $id)
     {
         $travelRequest = TravelRequest::findOrFail($id);
-
-        $travelRequest->user_id = auth()->user()->id;
+        
+        $travelRequest->user_id = $request->user_id;
         $travelRequest->destination = $request->destination;
         $travelRequest->departure_date = $request->departure_date;
         $travelRequest->return_date = $request->return_date;
@@ -66,7 +66,7 @@ class TravelRequestController extends Controller
         $travelRequest->save();
         return response()->json([
            'status' => true,
-           'message' => 'Solicitação de viagem criada com sucesso!'
+           'message' => 'Solicitação de viagem editada com sucesso!'
         ]);
     }
 

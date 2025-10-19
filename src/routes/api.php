@@ -11,7 +11,7 @@ Route::post('login', [AuthController::class, 'login']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::resource('users', UserController::class);
-    Route::get('me', [AuthController::class, 'me']);
+    Route::get('me', [UserController::class, 'me']);
     Route::get('travel-requests', [TravelRequestController::class, 'index']);
     Route::post('travel-request', [TravelRequestController::class, 'store']);
     Route::get('travel-request/{id}', [TravelRequestController::class, 'show']);
