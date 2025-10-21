@@ -148,8 +148,10 @@ docker compose up -d
 ```
 
 ---
+Collection Postman: [https://lunar-spaceship-865950.postman.co/workspace/api_fly_me~f0712913-d57a-4397-b293-2987acf36d6b/collection/27689082-e3063360-244e-4adf-9cfd-95b85180d6ba?action=share&creator=27689082&active-environment=27689082-e9b8fa5a-7b7c-4963-b1c7-14556f1cc404]
 
 ## 👩‍💻 _Autora - **Thayanne Tenório**_
+
 
 
 
